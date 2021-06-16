@@ -7,7 +7,7 @@ MAINTAINER CP/COMPARTNER <itservice@cp-compartner.de>
 # Or delete entirely if not needed.
 RUN apt update -y && \
     echo "===> Installing basic tools..." && \
-    apt-get install -y python-pip openssh-client sshpass && \
+    apt-get install -y python3-pip openssh-client sshpass && \
     apt-get clean all && \
     echo "===> Installing Ansible..."  && \
-    pip install --upgrade ansible pyyaml 
+    pip3 install --upgrade ansible pyyaml
